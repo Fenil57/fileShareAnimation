@@ -1,0 +1,30 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 2px solid black;
+  outline-offset: 5px;
+}
+
+#showBtn {
+  margin-bottom: 1rem;
+}
+
+#imageContainer {
+  width: fit-content;
+  /* height: 100px; */
+  overflow: hidden;
+  transform: translateY(60px);
+  transition: transform 0.5s ease-out;
+  animation: fileOpen 2s forwards;
+  border: 2px solid blue;
+}
+
+#imageContainer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+}
